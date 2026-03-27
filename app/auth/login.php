@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                     </svg>
                 </div>
-                <h1 class="display-5 fw-bold mb-3" style="font-family: inherit;">Portal UKK</h1>
+                <h1 class="display-5 fw-bold mb-3" style="font-family: inherit;">AZIZAH UKK</h1>
                 <p class="fs-5" style="color: rgba(255,255,255,0.85);">Sistem Inventaris Barang Berbasis Web Modern.</p>
             </div>
             
@@ -125,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
 
                 <div class="mt-5 text-center p-3 rounded-3" style="background: #fff7ed; border: 1px dashed #fdba74;">
-                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>gudang / gudang123</strong></p>
+                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>azizah / azizah123</strong></p>
                 </div>
             </div>
         </div>
