@@ -124,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
 
                 <div class="mt-5 text-center p-3 rounded-3" style="background: #fff7ed; border: 1px dashed #fdba74;">
-                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>gudang / gudang123</strong></p>
+                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>azizah / azizah123</strong></p>
                 </div>
             </div>
         </div>
