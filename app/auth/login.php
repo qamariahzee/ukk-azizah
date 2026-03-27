@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'Username dan password harus diisi!';
     } else {
         // Cari user berdasarkan username
-        $stmt = $pdo->prepare("SELECT id, username, password, role FROM users WHERE username = ?");
+        $stmt = $pdo->prepare("SELECT id, username, password FROM users WHERE username = ?");
         $stmt->execute([$username]);
         $user = $stmt->fetch();
         
@@ -37,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Login sukses
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            $_SESSION['role'] = $user['role'];
             
             // Redirect ke dashboard
             header('Location: ' . BASE_URL . '/app/dashboard.php');
@@ -53,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Inventaris Azizah</title>
+    <title>Login | Inventaris Fakhri</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="<?= BASE_URL ?>/app/assets/css/vendor/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                     </svg>
                 </div>
-                <h1 class="display-5 fw-bold mb-3" style="font-family: inherit;">AZIZAH UKK</h1>
+                <h1 class="display-5 fw-bold mb-3" style="font-family: inherit;">Portal UKK</h1>
                 <p class="fs-5" style="color: rgba(255,255,255,0.85);">Sistem Inventaris Barang Berbasis Web Modern.</p>
             </div>
             
@@ -125,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
 
                 <div class="mt-5 text-center p-3 rounded-3" style="background: #fff7ed; border: 1px dashed #fdba74;">
-                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>azizah / azizah123</strong></p>
+                    <p class="mb-0 fs-6" style="color: #c2410c;">Demo: <strong>gudang / gudang123</strong></p>
                 </div>
             </div>
         </div>
